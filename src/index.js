@@ -1,4 +1,6 @@
-var numbers = [3, 56, 2, 48, 5];
+import emojipedia from "./emojipedia";
+
+// var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 // const newNumbers = numbers.map(function(x){
@@ -29,4 +31,11 @@ var numbers = [3, 56, 2, 48, 5];
 // })
 
 // console.log(newNumbers);
+
+
+// Create a function that returns only the first 100 characters of the meanings of the entries
+// const meanings = emojipedia.map(function(entry){
+//     return entry.meaning.substring(0,100);
+// });
+// console.log(meanings);
 
