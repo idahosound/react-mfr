@@ -1,6 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
 // import emojipedia from "./emojipedia";
 
-var numbers = [3, 56, 2, 48, 5];
+// var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 // const newNumbers = numbers.map(function(x){
@@ -43,7 +47,7 @@ var numbers = [3, 56, 2, 48, 5];
 //Same as above with arrow function
 // const newNumbers = numbers.findIndex(x => x > 10);
 
-console.log(newNumbers);
+// console.log(newNumbers);
 
 
 // Create a function that returns only the first 100 characters of the meanings of the entries
@@ -51,4 +55,6 @@ console.log(newNumbers);
 //     return entry.meaning.substring(0,100);
 // });
 // console.log(meanings);
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
