@@ -2,17 +2,6 @@ import React from "react";
 import emojipedia from "./emojipedia";
 import Entry from "./components/entry";
 
-function createCard(props){
-  return (
-    <Entry
-      key={props.id}
-      name={props.name}
-      emoji={props.emoji}
-      meaning={props.meaning}
-    />
-  )
-}
-
 function App() {
   return (
     <div>
@@ -21,7 +10,12 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        {emojipedia.map(createCard)}
+        {emojipedia.map(props =>  <Entry
+      key={props.id}
+      name={props.name}
+      emoji={props.emoji}
+      meaning={props.meaning}
+    />)}
 
       </dl>
     </div>
